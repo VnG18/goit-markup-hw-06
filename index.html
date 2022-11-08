@@ -60,8 +60,59 @@
       <div class="container-backprop">
         <div class="backprop is-hidden" data-modal>
           <div class="modal">
-            <button class="close-btn" type="button" data-modal-close>
-            </button>
+            <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="form-field">
+              <label class="form-label" for="reg-name">Ім'я</label>
+              <div class="input-wrap">
+                <input class="form-input" type="text" name="reg-name" id="reg-name">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="reg-phone">Телефон</label>
+              <div class="input-wrap">
+                <input class="form-input" type="tel" name="reg-phone" id="reg-phone">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="reg-email">Пошта</label>
+              <div class="input-wrap">
+                <input class="form-input" type="email" name="reg-email" id="reg-email">
+                <svg class="input-icon" width="18" height="18">
+                  <use href="./images/icons/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="reg-comment">Коментар</label>
+              <textarea class="form-textarea" name="reg-comment" id="reg-comment"
+                placeholder="Введіть текст"></textarea>
+            </div>
+            <div class="form-field check-block-field">
+              <div class="check-block">
+                <input class="form-checkbox visually-hidden" type="checkbox" name="reg-checkbox" name="reg-checkbox"
+                  id="reg-checkbox" value="true">
+                <label class="check-text" for="reg-checkbox">
+                  <span class="">
+                    <svg class="check-icon" width="16" height="15">
+                      <use href="./images/icons/icons.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  Погоджуюся з розсилкою та приймаю</label>
+                <a class="contract-terms" href=""> Умови договору</a>
+              </div>
+            </div>
+            <button class="send-btn" type="submit">Відправити</button>
+            <a class="close-btn" data-modal-close>
+              <svg class="close-btn-svg" width="11" height="11">
+                <use class="close-btn-use" href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -406,6 +457,18 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer-subscription">
+        <h2 class="footer-header">Підпишіться на розсилку</h2>
+        <label class="footer-input-block">
+          <input type="email" class="footer-input-email" placeholder="E-mail">
+          <span class="subs-btn-wrap">
+            <button class="footer-subs-btn" type="submit">Підписатися</button>
+            <svg class="footer-subs-svg" width="24" height="24">
+              <use href="./images/icons/icons.svg#icon-airplane"></use>
+            </svg>
+          </span>
+        </label>
       </div>
     </div>
   </footer>
